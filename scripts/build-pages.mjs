@@ -11,7 +11,7 @@ const projects = [
   { slug: 'simple-calculator', directory: 'simple-calculator', type: 'vite' },
   { slug: 'student-portal', directory: 'student portal/student-portal', type: 'vite' },
   { slug: 'student-profile-card', directory: 'studentprofilecard', type: 'html', entry: 'profile.html' },
-  { slug: 'task-manager', directory: 'task manager/task-manager-react', type: 'vite' },
+  { slug: 'form-validation', directory: 'form validation/form-validation', type: 'vite' },
   { slug: 'to-do-app', directory: 'to do app/todoapp', type: 'vite' },
 ]
 
