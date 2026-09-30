@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f4ef" />
+    <title>Web Projects | Project Showcase</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: "Segoe UI", sans-serif;
+        color: #19251f;
+        background: #f5f4ef;
+        font-synthesis: none;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        background-image: linear-gradient(135deg, rgba(210, 229, 214, .38), transparent 42%), radial-gradient(#d7dcd4 0.7px, transparent 0.7px);
+        background-size: auto, 18px 18px;
+      }
+
+      main { width: min(1080px, calc(100% - 40px)); margin: 0 auto; padding: 68px 0 56px; }
+
+      .topline { display: flex; align-items: center; gap: 10px; color: #53665a; font-size: 12px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; }
+      .topline::before { width: 26px; height: 2px; background: #df7650; content: ""; }
+      h1 { max-width: 680px; margin: 17px 0 12px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(38px, 7vw, 66px); font-weight: 500; line-height: 1.02; }
+      .intro { max-width: 550px; margin: 0; color: #53605a; font-size: 16px; line-height: 1.6; }
+      .project-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 38px 0 0; padding: 0; list-style: none; }
+      .project-card { min-height: 92px; }
+      .project-card a { display: flex; min-height: 92px; align-items: center; gap: 16px; padding: 17px 20px; border: 1px solid #d9ded7; border-radius: 6px; background: rgba(255, 255, 255, .82); color: inherit; text-decoration: none; transition: border-color .18s ease, transform .18s ease, box-shadow .18s ease; }
+      .project-card a:hover, .project-card a:focus-visible { transform: translateY(-2px); border-color: #8aa18e; box-shadow: 0 8px 20px rgba(32, 55, 40, .08); outline: none; }
+      .number { display: grid; width: 42px; height: 42px; flex: 0 0 42px; place-items: center; border-radius: 4px; background: #e7eee6; color: #355540; font-family: Georgia, "Times New Roman", serif; font-size: 17px; }
+      .project-name { flex: 1; font-size: 16px; font-weight: 650; }
+      .arrow { color: #66786a; font-size: 21px; transition: transform .18s ease; }
+      a:hover .arrow { transform: translateX(3px); }
+      footer { display: flex; justify-content: space-between; gap: 16px; margin-top: 30px; padding-top: 16px; border-top: 1px solid #d9ded7; color: #69766e; font-size: 12px; }
+
+      @media (max-width: 640px) {
+        main { width: min(100% - 28px, 440px); padding-top: 42px; }
+        .project-list { grid-template-columns: 1fr; gap: 9px; margin-top: 28px; }
+        .project-card, .project-card a { min-height: 78px; }
+        footer { flex-direction: column; gap: 5px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="topline">Web development collection</div>
+      <h1>Ten projects.<br />One place.</h1>
+      <p class="intro">A collection of web projects built for learning, practice, and everyday problem-solving.</p>
+      <ol class="project-list">
+        <li class="project-card"><a href="projects/attendance-checker/"><span class="number">01</span><span class="project-name">Attendance Checker</span><span class="arrow" aria-hidden="true">&rarr;</span></a></li>
+        <li class="project-card"><a href="projects/counter-app/"><span class="number">02</span><span class="project-name">Counter App</span><span class="arrow" aria-hidden="true">&rarr;</span></a></li>
+        <li class="project-card"><a href="projects/student-portfolio/"><span class="number">03</span><span class="project-name">Student Portfolio</span><span class="arrow" aria-hidden="true">&rarr;</span></a></li>
+        <li class="project-card"><a href="projects/student-portfolio-react/"><span class="number">04</span><span class="project-name">Student Portfolio React</span><span class="arrow" aria-hidden="true">&rarr;</span></a></li>
+        <li class="project-card"><a href="projects/react-router-demo/"><span class="number">05</span><span class="project-name">React Router Demo</span><span class="arrow" aria-hidden="true">&rarr;</span></a></li>
+        <li class="project-card"><a href="projects/simple-calculator/"><span class="number">06</span><span class="project-name">Simple Calculator</span><span class="arrow" aria-hidden="true">&rarr;</span></a></li>
+        <li class="project-card"><a href="projects/student-portal/"><span class="number">07</span><span class="project-name">Student Portal</span><span class="arrow" aria-hidden="true">&rarr;</span></a></li>
+        <li class="project-card"><a href="projects/student-profile-card/"><span class="number">08</span><span class="project-name">Student Profile Card</span><span class="arrow" aria-hidden="true">&rarr;</span></a></li>
+        <li class="project-card"><a href="projects/task-manager/"><span class="number">09</span><span class="project-name">Task Manager</span><span class="arrow" aria-hidden="true">&rarr;</span></a></li>
+        <li class="project-card"><a href="projects/to-do-app/"><span class="number">10</span><span class="project-name">To-Do App</span><span class="arrow" aria-hidden="true">&rarr;</span></a></li>
+      </ol>
+      <footer><span>Project showcase</span><span>10 independent web projects</span></footer>
+    </main>
+  </body>
+</html>

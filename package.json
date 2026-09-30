@@ -1,0 +1,7 @@
+{
+  "name": "web-projects-showcase",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-pages.mjs"
+  }
+}
